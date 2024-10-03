@@ -2,6 +2,13 @@
 + **Recognise** fundamental data types and data source types, key Data Engineering technological standards and best practices, and relevant regulations. 
 + **Apply** fundamental principles for fostering a data-driven culture through collaborating with diverse stakeholders in Agile and Lean teams, avoiding waste and respecting organisational processes for data quality and data project management. 
 + **Model** standardised Big Data ecosystems and architectures for enterprise data using visual approaches and comprehend how to design rudimentary data products, and how they add value to the organisation. 
+
+# 5V's of big data:
++ Velocity
++ Volume 
++ Value
++ Variety
++ Veracity
 ______________________________________________________________________________________________________________________
 
 # 1.2 Data Fundamentals - Topic 2 - Introduction to Data Quality Objectives: 
@@ -52,4 +59,22 @@ https://ukdataservice.ac.uk/learning-hub/research-data-management/collaborative-
 + **XML (Extensible Markup Language)** is a markup language designed for structuring and exchanging data between systems, promoting interoperability
 + **CSV (Comma-Separated Values)** is a widely used format for storing and exchanging tabular data, commonly used in spreadsheets and for data integration and analysis tasks
 + **JSON (JavaScript Object Notation)** is a lightweight, human-readable format primarily used for transmitting data between servers and web applications, enhancing user experiences and performance
+
+# Data quality issues:
++ Missing values
++ Incorrect data types
++ Duplicate entries
+
+# Focus on sustainability:
++ Compression
++ Green Data Transfer
+
+# Data Quality Framework (DMAIC):
++ Define
++ Measure
++ Analyse
++ Improve 
++ Control
 ____________________________________________________________________________________________________________________
+# Old data:
++ older than 100 milliseconds

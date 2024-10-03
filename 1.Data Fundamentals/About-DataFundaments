@@ -1,4 +1,55 @@
-# Data Fundamentals Objectives:
+# 1.1 Data Fundamentals - Topic 1 - Fundamentals of the data-driven enterprise Objectives:
 + **Recognise** fundamental data types and data source types, key Data Engineering technological standards and best practices, and relevant regulations. 
 + **Apply** fundamental principles for fostering a data-driven culture through collaborating with diverse stakeholders in Agile and Lean teams, avoiding waste and respecting organisational processes for data quality and data project management. 
 + **Model** standardised Big Data ecosystems and architectures for enterprise data using visual approaches and comprehend how to design rudimentary data products, and how they add value to the organisation. 
+______________________________________________________________________________________________________________________
+
+# 1.2 Data Fundamentals - Topic 2 - Introduction to Data Quality Objectives: 
++ **Recognise** fundamental data types and data source types, key Data
+Engineering technological standards and best practices, and relevant
+regulations
++ **Apply** fundamental principles for fostering a data-driven culture through
+collaborating with diverse stakeholders in Agile and Lean teams, avoiding
+waste and respecting organisational processes for data quality and data
+project management
++ **Model* standardised Big Data ecosystems and architectures for enterprise
+data using visual approaches and comprehend how to design rudimentary
+data products, and how they add value to the organisation
++ **Explain** the importance of assessing, improving, and maintaining data quality
+using frameworks and methodologies to ensure data accuracy, completeness,
+and consistency.
+
+# Data quality:
++ Data quality refers to measuring how well your data meets both the technical and business requirements to support its intended use
+
+# Data quality dimensions/metrics: 
++ Accuracy
++ Integrity
++ Consistency
++ Timeliness
+
+# Open standards 
++ are guidelines for technology that anyone can use and contribute to
+
+# FAIR data are data which meet the principles of 
++ findability
++ accessibility
++ interoperability
++ reusability
+
+# UK Standards:
+https://ukdataservice.ac.uk/learning-hub/research-data-management/collaborative-research/standards/
+
+# The Dublin Core Metadata Initiative (DCMI) 
++ offers a set of metadata standards used to describe resources in various domains.
+
+# Challenges of unstandardised data
++ Data silos
++ Inconsistencies
++ Integration issues
+
+# Data formats:
++ **XML (Extensible Markup Language)** is a markup language designed for structuring and exchanging data between systems, promoting interoperability
++ **CSV (Comma-Separated Values)** is a widely used format for storing and exchanging tabular data, commonly used in spreadsheets and for data integration and analysis tasks
++ **JSON (JavaScript Object Notation)** is a lightweight, human-readable format primarily used for transmitting data between servers and web applications, enhancing user experiences and performance
+____________________________________________________________________________________________________________________

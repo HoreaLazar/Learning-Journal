@@ -3,7 +3,7 @@
 + **Apply** fundamental principles for fostering a data-driven culture through collaborating with diverse stakeholders in Agile and Lean teams, avoiding waste and respecting organisational processes for data quality and data project management. 
 + **Model** standardised Big Data ecosystems and architectures for enterprise data using visual approaches and comprehend how to design rudimentary data products, and how they add value to the organisation. 
 
-# 5V's of big data:
+## 5V's of big data:
 + Velocity
 + Volume 
 + Value
@@ -26,55 +26,105 @@ data products, and how they add value to the organisation
 using frameworks and methodologies to ensure data accuracy, completeness,
 and consistency.
 
-# Data quality:
+## Data quality:
 + Data quality refers to measuring how well your data meets both the technical and business requirements to support its intended use
 
-# Data quality dimensions/metrics: 
+## Data quality dimensions/metrics: 
 + Accuracy
 + Integrity
 + Consistency
 + Timeliness
 
-# Open standards 
+## Open standards 
 + are guidelines for technology that anyone can use and contribute to
 
-# FAIR data are data which meet the principles of 
+## FAIR data are data which meet the principles of 
 + findability
 + accessibility
 + interoperability
 + reusability
 
-# UK Standards:
+## UK Standards:
 https://ukdataservice.ac.uk/learning-hub/research-data-management/collaborative-research/standards/
 
-# The Dublin Core Metadata Initiative (DCMI) 
+## The Dublin Core Metadata Initiative (DCMI) 
 + offers a set of metadata standards used to describe resources in various domains.
 
-# Challenges of unstandardised data
+## Challenges of unstandardised data
 + Data silos
 + Inconsistencies
 + Integration issues
 
-# Data formats:
+## Data formats:
 + **XML (Extensible Markup Language)** is a markup language designed for structuring and exchanging data between systems, promoting interoperability
 + **CSV (Comma-Separated Values)** is a widely used format for storing and exchanging tabular data, commonly used in spreadsheets and for data integration and analysis tasks
 + **JSON (JavaScript Object Notation)** is a lightweight, human-readable format primarily used for transmitting data between servers and web applications, enhancing user experiences and performance
 
-# Data quality issues:
+## Data quality issues:
 + Missing values
 + Incorrect data types
 + Duplicate entries
 
-# Focus on sustainability:
+## Focus on sustainability:
 + Compression
 + Green Data Transfer
 
-# Data Quality Framework (DMAIC):
+## Data Quality Framework (DMAIC):
 + Define
 + Measure
 + Analyse
 + Improve 
 + Control
-____________________________________________________________________________________________________________________
-# Old data:
+
+## Old data:
 + older than 100 milliseconds
+____________________________________________________________________________________________________________________
+
+# L5DE.1.3 Introduction to managing data projects and products
+
+## Incompatibility of the Waterfall approach with the dynamic nature of
+data projects
+Waterfall is a structured, disciplined methodology that is most effective for projects with well-defined requirements and little expected change. While it provides clarity and control in complex projects, it lacks the flexibility of more iterative approaches like Agile, making it less suited to projects where requirements may evolve or change frequently
+
+## Adoption of Agile, Lean, and Six Sigma principles
+Agile is about speed and flexibility, Lean is about efficiency, and Six Sigma is about quality and precision
+
+## LiquidPlanner
+Key features include priority-based planning, which ensures that teams focus on the most important tasks, and automatic resource levelling, which helps distribute workloads evenly across team members. It supports both Agile and Waterfall methodologies, making it adaptable to various project management styles
+
+## List the limitations of the Waterfall model in the context of data science projects
++ **Rigid Structure** - The Waterfall model is linear, with each phase needing to be completed before moving to the next
++ **Lack of Flexibility** - Waterfall’s strict structure makes it challenging to incorporate changes mid-project
++ **Late Feedback** - In Waterfall, testing and evaluation come at the end of the project.
++ **Incompatible with Exploratory Nature** - The Waterfall model’s assumption that the requirements are fully known at the beginning does not fit this approach
++ **Inflexible for Uncertain Requirements** - Waterfall assumes that all requirements are known upfront
++ **Slow Iteration Cycles** - Waterfall's phased approach can lead to long delays between the initial data collection and final model deployment
++ **No Emphasis on Model Validation** - Validation and testing occur after development
++ **Limited Stakeholder Engagement** - Involves stakeholders at the beginning and end of the project. This can result in a misalignment between the outcomes and stakeholder expectations
+​+ **Inefficient Handling of Data Quality Issues** - In Waterfall, it is difficult to go back and address these issues once the project has moved forward.
+
+## Explain how Agile principles and frameworks can foster adaptability and collaboration
+Promoting iterative development, regular feedback, self-organising teams, and an emphasis on working software. They enhance collaboration by breaking down silos, encouraging cross-functional teamwork, and involving stakeholders throughout the process. These elements create a dynamic environment where teams can respond quickly to change while staying focused on delivering value.
+
+## Identify which Lean and Six Sigma practices can drive continuous improvement
+Lean’s focus on waste reduction complements Six Sigma’s focus on reducing variation and defects, allowing organizations to streamline processes and enhance quality simultaneously.
+By combining Lean tools like Kaizen and Value Stream Mapping with Six Sigma’s DMAIC framework, organizations can systematically improve processes while responding to real-time challenges, driving ongoing operational excellence.
+
+# Well-written user stories in Agile development - INVEST
++ I - Independent
++ N - Negotiable
++ V - Valuable
++ E - Estimable
++ S - Small
++ T - Testable
+
+# Definition of Done (DoD)
+Is a set of criteria that must be met for a product increment to be considered complete and ready for release. It serves as a shared understanding between the development team and stakeholders about what constitutes a finished product.
+
+# Minimum Viable Product (MVP)
+Is a strategy for delivering a product with the minimum set of features to satisfy early customers and gather feedback
+
+# Test and learn
+Emphasises a continuous cycle of testing hypotheses, gathering data, and learning from the results to inform decision-making and product development. 
+Enable teams to make informed decisions, reduce uncertainty, and deliver value to users efficiently
+

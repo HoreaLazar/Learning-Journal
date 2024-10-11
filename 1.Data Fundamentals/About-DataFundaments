@@ -128,3 +128,20 @@ Is a strategy for delivering a product with the minimum set of features to satis
 Emphasises a continuous cycle of testing hypotheses, gathering data, and learning from the results to inform decision-making and product development. 
 Enable teams to make informed decisions, reduce uncertainty, and deliver value to users efficiently
 
+# Data Quality Discussion:
+
+# Best practices identified:
++ Clear and defined schema 
++ Consolidated consistent fields 
++ Standardised data types (HOSP, etc)
++ Identify duplication, NULL values etc
++ Are there any outstanding challenges or questions about the merged dataset
++ Comprehensive Schema included
++ Query - Ownership on Iliala, Private vs Private FBO v FBO. Is it safe to assume that FBO isn't private?
++ What to do with the data that has ??
+
+# Any outstanding issues with the resulting dataset
++ Unclear with ranges of star rating 
+Limited use cases
+No primary key
+no time/date ranges (what happens if a HC name changes?)

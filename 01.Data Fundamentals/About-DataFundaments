@@ -80,11 +80,11 @@ https://ukdataservice.ac.uk/learning-hub/research-data-management/collaborative-
 + older than 100 milliseconds
 ____________________________________________________________________________________________________________________
 
-# L5DE.1.3 Introduction to managing data projects and products
+# 1.3 Data Fundamentals - Topic 3 - Introduction to managing data projects and products
 
 ## Incompatibility of the Waterfall approach with the dynamic nature of
 data projects
-Waterfall is a structured, disciplined methodology that is most effective for projects with well-defined requirements and little expected change. While it provides clarity and control in complex projects, it lacks the flexibility of more iterative approaches like Agile, making it less suited to projects where requirements may evolve or change frequently
+Waterfall is a structured, disciplined methodology most effective for projects with well-defined requirements and little expected change. While it provides clarity and control in complex projects, it lacks the flexibility of more iterative approaches like Agile, making it less suited to projects where requirements may evolve or change frequently
 
 ## Adoption of Agile, Lean, and Six Sigma principles
 Agile is about speed and flexibility, Lean is about efficiency, and Six Sigma is about quality and precision
@@ -119,7 +119,7 @@ By combining Lean tools like Kaizen and Value Stream Mapping with Six Sigma’s 
 + T - Testable
 
 # Definition of Done (DoD)
-Is a set of criteria that must be met for a product increment to be considered complete and ready for release. It serves as a shared understanding between the development team and stakeholders about what constitutes a finished product.
+A set of criteria must be met for a product increment to be considered complete and ready for release. It provides a shared understanding between the development team and stakeholders about what constitutes a finished product.
 
 # Minimum Viable Product (MVP)
 Is a strategy for delivering a product with the minimum set of features to satisfy early customers and gather feedback
@@ -142,6 +142,7 @@ Enable teams to make informed decisions, reduce uncertainty, and deliver value t
 
 # Any outstanding issues with the resulting dataset
 + Unclear with ranges of star rating 
-Limited use cases
-No primary key
-no time/date ranges (what happens if a HC name changes?)
++ Limited use cases
++ No primary key
++ no time/date ranges (what happens if a HC name changes?)
+

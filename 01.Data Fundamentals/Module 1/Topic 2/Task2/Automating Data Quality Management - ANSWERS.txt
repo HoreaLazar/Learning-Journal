@@ -1,0 +1,17 @@
+Arrange a shadowing session with a data engineer or a subject matter expert in your organisation to observe how they leverage automated data quality management tools in their workflow.
+
+During the shadowing session, be respectful, curious, and prepared with questions to gain insights into the following:
+
+Specific use cases and scenarios where automated data quality management tools are employed
+Benefits and challenges of using these tools
+Integration with existing data pipelines or workflows
+Utilise internal resources like wikis, documentation, and knowledge bases to gather insights on automated data quality management within your organisation
+_________________________________________________________________________________________
+
+Document your findings, insights, and learning in your learning journal, including:
+
+An overview of the automated data quality management tools you researched
+Key features and capabilities of these tools
+Examples of how they are used in your organisation or industry
+Potential challenges or limitations you identified
+Best practices and recommendations for effective implementation and usage

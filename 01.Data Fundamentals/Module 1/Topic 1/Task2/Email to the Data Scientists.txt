@@ -1,0 +1,24 @@
+The request:
+
+From: datascientist@company.com
+To: dataengineer@company.com
+Re: Dataset usability - healthcare facility data
+
+Good morning, as part of our new healthcare facility project for Tanzania, we would like to perform clustering on the data for the three localities Mwanza, Pwani and Ilala. The data has been sourced from local authorities, they all use slightly different formats. Can you please pool this into a single dataset and make sure any quality issues are addressed? Please also create a schema for the data.
+
+Many thanks,
+_______________________________________________________________________________
+
+The response: 
+
+From: dataengineer@company.com
+To: datascientist@company.com
+Re: Dataset usability - healthcare facility data
+
+Hi, 
+I checked the file provided and the format is not consistent in all regions. 
+There are spelling mistakes, duplicates, missing data and different text formats.
+I attached a file with the standard format and requirements to be filled by each local authorities.
+You can find in the file also the schema for the data. 
+
+Many thanks,

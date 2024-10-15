@@ -1,0 +1,61 @@
+IBM HR Analytics Employee Attrition & Performance - data quality questions:
+
+1. What is the usability score of this dataset and is it “good” or “bad”?
+The usability score is 'GOOD'. The dataset is well-structured and rich in information, making it suitable for attrition analysis and predictive modelling.
+
+2. How is this usability score calculated?
+Size and Scope: With a substantial number of records and features, the dataset is fairly comprehensive.
+Data Completeness: No missing values, ensuring smooth analysis without the need for heavy data imputation.
+Feature Diversity: It covers a wide range of factors that can influence attrition, which is useful for both descriptive and predictive analyses.
+
+3. What are the two credibility issues with this dataset and why are they important?
+Missing coverage and missing provenance are red flags for data quality because they impact the reliability and usefulness of the data. 
+
+4. How many columns does this dataset have?
+35 columns
+
+5. What is the licence for this dataset and how would you summarise the usage rights in your own words?
+It is an open license (open database) for non-commercial use, publicly available for educational and demonstration purposes
+______________________________________________________________________________________________
+
+IBM HR Analytics Employee Attrition & Performance - metadata as croissant
+
+1. Find the description
+'Archive containing all the contents of the IBM HR Analytics Employee Attrition & Performance dataset'
+
+2. Search for 'md5' - What does that entry mean?
+MD5 (message-digest algorithm) is a cryptographic protocol that verifies the integrity of files and messages
+
+3. Identify data types
+sc:Integer, sc:Boolean, sc:Text, 
+
+4. What are the dataTypes sc:Integer and sc:Boolean? 
+The integer is for whole numbers and is useful for counting or ordering data.
+Boolean is for binary logic, indicating conditions or outcomes that can only be true or false.
+
+5. Find an example of a Boolean field.
+Attrition, Gender, OverTime
+
+6. Why does using compression aid sustainability and net-zero goals?
+It helps optimize resource usage, cut energy costs, and reduce the environmental impact of data-driven systems, aligning with sustainability and net-zero targets.
+- Reducing data storage needs, which lowers energy consumption in data centres.
+- Minimizing network traffic and data transfer, leading to less power usage in servers and devices.
+- Improving cloud efficiency, reducing processing power, and cooling demands.
+- Lowering carbon emissions by cutting the energy required for digital operations, supporting green IT initiatives
+
+7. What is the possible issue in identifying the meaning of the column named 'YearsSinceLastPromotion', especially when interpreting the value of '0' in one of the fields?
+Misleading Insights - without clarity, we can assume that '0' means 
+- that the employee was just promoted within the current year, which is a positive indication of career progression or 
+- that the employee has never been promoted, which has a completely different interpretation 
+
+8. Compare the contents of the column 'Over18' and 'OverTime', what data quality issue can you identify?
+The ‘Over18’ column contains only one unique value (‘Y’) with no relevance to the overall data and The ‘OverTime’ column contains two unique values (‘Yes’ and ‘No’) indicating whether employees work overtime or not without knowing the time spent.
+
+9. What are some possible issues with the data quality of 'MonthlyIncome' and 'Monthly Rate'?
+No missing, negative, or zero values in either column, which is good but the presence of duplicate values in both columns, might require further investigation to ensure data accuracy and uniqueness.
+
+10. How would you validate the 'EmployeeNumber' column and what needs paying special attention to?
+Uniqueness: The ‘EmployeeNumber’ should be unique for each employee. Any duplicates would indicate a serious data quality issue.
+Positive Values: The ‘EmployeeNumber’ should only contain positive integers. Negative or zero values would be invalid.
+Completeness: Ensure there are no missing values. Every employee should have an ‘EmployeeNumber’.
+Consistency: The format of ‘EmployeeNumber’ should be consistent throughout the dataset (e.g., all numeric).

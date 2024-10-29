@@ -1,1 +1,54 @@
+# Module 2 - Databases & Data Lakes
 
+## Topic 1 - Storing and querying data
+
+### Which technologies do you use for data storage at work?
++ Relational Databases (SQL-based) - Microsoft SQL Server
++ Cloud Storage Solutions - Microsoft Azure Blob Storage
++ Data Lakehouse - name/provider, more info!!!
++ SharePoint
++ File Storage Systems - NFS (Network File System)
+
+### Why are businesses not throwing away data?
+To understand customers better, predict trends, improve products, make smart decisions, and stay competitive. 
+Sometimes to sell or share data for extra money.
+
+### On-premise pros and cons
++ On-Premise Pros:
+Full control over infrastructure
+Enhanced security for sensitive data
+Easier compliance with strict regulations
+Potentially better performance for high-demand apps
+Customizable to specific business needs
+
++ On-Premise Cons:
+High upfront costs
+Requires ongoing maintenance and updates
+Difficult and costly to scale
+Complicated disaster recovery
+Limited remote access compared to cloud solutions
+
+### The data model description generally consists of three parts:​
++ Structure of the data – what does it look like
++ Operations on the data – what's available
++ Constraints on the data – what's allowed
+
+### Terminology
+• Relations/Tables
+• Columns/Attributes/Fields
+• Rows/Tuples/Records
+• Degree (arity) of a relation = #attributes
+• Cardinality of  a relation = #tuples
+
+Student(id:INT, sname:VARCHAR(50), age:INT, gpa:FLOAT)
+
+### Define a relational schema in SQL
+Create, Show, Order
+
+### RDBS data - Relational Database Management System (RDBMS)
+
+### Questions: 
+Do we use Architecture diagrams in our company? Who is responsible?
+- 
+Data storage - Data Lakehouse (details: provider=Azure?, type, structure)
+- As Data Lakehouse we use Microsoft Fabric and Microsoft Azure

@@ -2,16 +2,48 @@ Arrange a shadowing session with a data engineer or a subject matter expert in y
 
 During the shadowing session, be respectful, curious, and prepared with questions to gain insights into the following:
 
-Specific use cases and scenarios where automated data quality management tools are employed
-Benefits and challenges of using these tools
-Integration with existing data pipelines or workflows
-Utilise internal resources like wikis, documentation, and knowledge bases to gather insights on automated data quality management within your organisation
+1. Specific use cases and scenarios where automated data quality management tools are employed
+In our company we 
+
+2. Benefits and challenges of using these tools
+
+
+3. Integration with existing data pipelines or workflows
+
+
+4. Utilise internal resources like wikis, documentation, and knowledge bases to gather insights on automated data quality management within your organisation
+
 _________________________________________________________________________________________
 
 Document your findings, insights, and learning in your learning journal, including:
 
-An overview of the automated data quality management tools you researched
-Key features and capabilities of these tools
-Examples of how they are used in your organisation or industry
-Potential challenges or limitations you identified
-Best practices and recommendations for effective implementation and usage
+1. An overview of the automated data quality management tools you researched
+Power Apps is a low-code platform that enables users to build custom apps quickly, even without extensive programming knowledge. For data quality management, Power Apps can be used to automate repetitive tasks such as data entry validation, flagging inconsistent data, or generating reports on data quality issues. The integration with other Microsoft products like Excel, SharePoint, and Power Automate makes it easy to connect to various data sources, ensuring that data across systems stays consistent and accurate.
+
+While Power Apps is a great tool for quick development, sometimes businesses need more customized solutions. Custom mobile apps provide flexibility to meet specific data management needs. These apps can be tailored to the company’s workflow, integrating features such as barcode scanning, real-time data syncing, taking photos as proof and user-specific dashboards to ensure data quality across all departments.
+
+2. Key features and capabilities of these tools
+By using automated tools like Power Apps and custom mobile apps for data quality management, companies can:
+- Reduce manual errors: Automation ensures that data follows consistent rules, reducing the chance of mistakes.
+- Save time: Employees spend less time checking and correcting data, freeing them up for more important tasks.
+- Improve decision-making: Clean, accurate data leads to better business decisions, as stakeholders can trust the information they are working with.
+
+3. Examples of how they are used in your organisation or industry
+Power Apps: 
+- Desk Booking: we used the employee's data (names) and the desks available in the office (list of desks) so that any employee can view and book any available desks.
+-  Machinery Fault: we used the employee's data (names) and available machines in the company, to report any fault. Before we used emails without any centralised data. Now we have a dashboard with all the faults, locations where the machines are not working and machines available.
+- Company Stock: we used orders/deliveries of stocks in centralised data for the warehouses. Before we used emails and different Excel files. 
+Custom Apps:
+- CleaningLog Stations/Depots/Buses: we used the employees' names, sites, areas, locations, and jobs/assets to monitor the work rate. With the data provided, we created dashboards for the Account Directors and Division Managers to monitor the expenses with the staff and products required to complete the jobs, and dashboards for General Managers and Supervisors to monitor the sites with clean issues or understaffed.
+
+4. Potential challenges or limitations you identified
+Challenges:
+- even if the solutions were user-friendly and very simple to use, moving from emails and Excel files for some was quite challenging.
+- everybody needed a device to access the apps. Setting the devices so they can easily access the apps. 
+Limitations:
+- Power Apps relies heavily on Microsoft’s ecosystem, so it might not integrate well with non-Microsoft systems
+- requires careful setup and ongoing maintenance to ensure the automated rules keep up with changes in data and business processes
+- developing custom apps can be time-consuming and expensive since they require skilled developers to build and maintain them
+- custom apps might need frequent updates to keep up with changes in data sources or company requirements, which adds ongoing costs
+
+5. Best practices and recommendations for effective implementation and usage

@@ -77,3 +77,9 @@ Flexible Partitioning: Supports changes without costly reorganization.
 Efficient Metadata: Manages metadata for quick access to evolving data.
 Compatibility: Works with multiple engines for easy integration.
 These features make Iceberg ideal for managing frequently changing data environments.
+
+### Update the learning journal with the following:
+List of databases that you have encountered at work - Azure
+Whether these databases are open-source or not - Not. Paid 
+If they are cloud or on-premise - Cloud
+Is internal training available in-house on how to use them efficiently? - Yes

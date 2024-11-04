@@ -52,3 +52,34 @@ Do we use Architecture diagrams in our company? Who is responsible?
 - 
 Data storage - Data Lakehouse (details: provider=Azure?, type, structure)
 - As Data Lakehouse we use Microsoft Fabric and Microsoft Azure
+_____________________________________________________________________________________
+
+## Topic 2 - Schemas and integrations
+
+OLAP (Online Analytical Processing) and 
+OLTP (Online Transaction Processing) systems
+
++ Why might an organisation prefer the simplicity of a star schema for reporting and
+querying purposes?
+For its simplicity, ease of use, and performance benefits. The straightforward structure makes it easy to understand, write queries, and use with BI tools. The denormalized design reduces complex joins, leading to faster query performance, which is ideal for reporting and analytics.
+
++ Explain the differences between the normal forms and denormalized data, their pros and cons, and which is the best.
+1NF: Data should be atomic (no lists/repeating groups). Pro: Simple structure. Con: Can still be redundant.
+2NF: No partial dependencies (must depend on the whole key). Pro: Less redundancy. Con: More tables.
+3NF: No transitive dependencies (attributes depend only on the primary key). Pro: Minimal redundancy, better integrity. Con: Complex queries.
+Denormalized Data: Tables are merged, allowing some redundancy. Pro: Faster queries. Con: More storage, and potential data issues.
+Best Choice: 3NF for clean, consistent data; denormalized for faster performance. I prefer 3NF for data integrity but denormalized for quick access.
+
++ How does Apache Iceberg enhance data management strategies, particularly in environments requiring frequent updates to the data schema?
+Schema Evolution: Allows easy schema changes without table rewrites.
+Atomic Transactions: Ensures data consistency and prevents partial updates.
+Flexible Partitioning: Supports changes without costly reorganization.
+Efficient Metadata: Manages metadata for quick access to evolving data.
+Compatibility: Works with multiple engines for easy integration.
+These features make Iceberg ideal for managing frequently changing data environments.
+
+### Update the learning journal with the following:
+List of databases that you have encountered at work - Azure
+Whether these databases are open-source or not - Not. Paid 
+If they are cloud or on-premise - Cloud
+Is internal training available in-house on how to use them efficiently? - Yes

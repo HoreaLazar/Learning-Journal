@@ -1,0 +1,11 @@
+CustomerID,Name,Email,Phone,DateOfBirth,Address,TotalSpent,LastPurchaseDate
+1,John Smith,john.smith@email.com,1234567890,1985-07-15,"123 Maple St, Apt 1",250.75,2024-01-15
+2,Jane Doe,jane_doe@email.com,9876543210,1990-03-25,"456 Oak St, Apt 3",0,NULL
+3,Robert Johnson,robert_john@email.com,5551234567,NULL,"789 Pine St, Suite 2",1300.5,2024-02-10
+4,Maria Garcia,NULL,2223334444,1979-12-05,NULL,525,2024-01-30
+5,Li Wei,liwei@email.com,N/A,1988-06-11,12 Elm St,780.25,2023-11-15
+6,Jane Doe,jane_doe@email.com,9876543210,1990-03-25,"456 Oak St, Apt 3",0,NULL
+7,Ahmed Khan,ahmed.khan@email.com,4445556666,1987-02-28,"101 Birch St, Apt 12",350,2024-03-05
+8,Emma Lee,emmalee@email.com,NULL,1995-10-18,"654 Willow St, Apt 7",0,NULL
+9,John Smith,john_smith@email.com,1234567890,1985-07-15,"123 Maple St, Apt 1",250.75,2024-01-15
+10,N/A,NULL,NULL,NULL,NULL,0,NULL

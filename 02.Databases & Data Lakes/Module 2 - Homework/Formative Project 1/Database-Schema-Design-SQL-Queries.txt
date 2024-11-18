@@ -1,0 +1,60 @@
+-- Create tables
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Age INT,
+    Location VARCHAR(50)
+);
+
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(100),
+    Category VARCHAR(50)
+);
+
+CREATE TABLE Transactions (
+    TransactionID INT PRIMARY KEY,
+    CustomerID INT,
+    ProductID INT,
+    TransactionDate DATE,
+    Amount DECIMAL(10, 2),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+);
+
+-- Insert data into Customers
+INSERT INTO Customers (CustomerID, Name, Age, Location) VALUES
+(1, 'John Doe', 30, 'New York'),
+(2, 'Jane Smith', 25, 'Los Angeles'),
+(3, 'Alice Brown', 28, 'Chicago');
+
+-- Insert data into Products
+INSERT INTO Products (ProductID, ProductName, Category) VALUES
+(1, 'Laptop', 'Electronics'),
+(2, 'Coffee Maker', 'Appliances'),
+(3, 'Book', 'Literature');
+
+-- Insert data into Transactions
+INSERT INTO Transactions (TransactionID, CustomerID, ProductID, TransactionDate, Amount) VALUES
+(1, 1, 1, '2023-10-01', 1200.00),
+(2, 2, 2, '2023-10-02', 150.50),
+(3, 3, 3, '2023-10-03', 20.00);
+
+-- Show all customers
+SELECT * FROM Customers;
+
+-- Show all products
+SELECT * FROM Products;
+
+SELECT 
+    t.TransactionID, 
+    c.Name, 
+    p.ProductName as Product, 
+    t.TransactionDate as Date, 
+    t.Amount 
+FROM 
+    Transactions t
+JOIN 
+    Customers c, Products p
+ON 
+    t.CustomerID = c.CustomerID AND t.ProductID = p.ProductID

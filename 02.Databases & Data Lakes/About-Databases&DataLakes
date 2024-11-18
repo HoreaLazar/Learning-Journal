@@ -83,3 +83,24 @@ List of databases that you have encountered at work - Azure
 Whether these databases are open-source or not - Not. Paid 
 If they are cloud or on-premise - Cloud
 Is internal training available in-house on how to use them efficiently? - Yes
+
+_______________________________________________________________________________________________________________
+
+## Topic 4 - Schemas and integrations 
+
+Analyse 'Data Profiling - Sheet1.csv' file:
+Issues: 
+- duplicate records: John Smith (rows 2 and 10) and Jane Doe (rows 3 and 7)
+- missing data (NULL and N/A)
+- inconsistent Values (NULL vs N/A)
+- lack of data validation (Email, DateOfBirth, Phone - they should be mandatory)
+- ambiguity in CustomerID data (row 11 - customer 10 has NULL everywhere)
+To do: 
+- remove duplicates, 
+- use only NULL for missing data, 
+- validate data for email, phone and addresses
+- fill in the missing data where possible 
+
+1. Benefits of Data Archiving: saves storage costs, Boosts system performance, Ensures compliance, secures long-term data, enables historical analysis, aids disaster recovery.
+2. Why Data Archiving is Needed: manages data growth, meets compliance mandates, optimizes storage, improves system efficiency and preserves data for future use
+

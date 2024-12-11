@@ -4,3 +4,18 @@ Distributed version control systems (DVCS)
 Extract, Transform and Load (ETL)
 Version Control System (VSC)
 Pull requests (PRs)
+SDLC - Software Development Lifecycle
+  - Planning
+  - Analysis
+   - Design
+  - Development
+  - Testing
+  - Deployment
+  - Maintenance
+Syntax - refers to the set of rules that defines the combinations of symbols considered correctly structured programs in a programming language
+Variables - are used to store data that can be referenced and manipulated in a program
+Functions - are reusable blocks of code that perform a specific task
+Reserved keywords - are special words that are part of the Python language syntax and have specific meanings
+Control flow - refers to the order in which individual statements, instructions, or function calls are executed or evaluated in a Python program
+Recursion - is a technique where a function calls itself to solve a problem
+TDD - Test-Driven Development (Red-Green-Refactor cycle)

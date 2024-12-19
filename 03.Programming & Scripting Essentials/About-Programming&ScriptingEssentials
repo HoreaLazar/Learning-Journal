@@ -33,3 +33,6 @@ The benefits of data serialisation include:
 • Performance: Serialised data can be efficiently transmitted over networks, reducing bandwidth usage and improving communication speed
 
 The Singleton pattern is particularly useful for managing resources such as database connections, configuration settings, or logging instances in data engineering projects. 
+
+Procedurals (steps) vs OOP (groups/classes)
+EDA - Exploring Data Analysis

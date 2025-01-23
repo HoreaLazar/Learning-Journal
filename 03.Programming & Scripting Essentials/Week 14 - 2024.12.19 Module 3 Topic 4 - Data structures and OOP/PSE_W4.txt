@@ -1,0 +1,49 @@
+Programming and Scripting Essentials - Week 4 - Links
+
+1 - Python Basics
+
+https://www.programiz.com/python-programming/examples
+
+https://www.w3schools.com/python/python_examples.asp
+
+https://www.freecodecamp.org/news/python-program-examples-simple-code-examples-for-beginners/
+
+https://www.freecodecamp.org/news/python-code-examples-simple-python-program-example/
+
+
+2 - Object Oriented Basics
+
+https://agilemanifesto.org/
+
+https://www.educative.io/blog/object-oriented-programming
+
+https://www.geeksforgeeks.org/benefits-advantages-of-oop/
+
+https://reliasoftware.com/blog/difference-between-procedural-and-object-oriented-programming
+
+https://www.geeksforgeeks.org/python-oops-concepts/
+
+https://www.programiz.com/python-programming/object-oriented-programming
+
+https://www.freecodecamp.org/news/object-oriented-programming-python/
+
+https://www.freecodecamp.org/news/what-is-object-oriented-programming/
+
+
+3 - Data and Visualisations in Python 
+
+https://www.datacamp.com/cheat-sheet/data-quality-dimensions-cheat-sheet
+
+https://www.datacamp.com/tutorial/guide-to-data-cleaning-in-python
+
+https://www.w3schools.com/python/pandas/pandas_cleaning.asp
+
+https://www.freecodecamp.org/news/data-cleaning-and-preprocessing-with-pandasbdvhj/
+
+https://medium.com/@thionwriting/data-profiling-with-python-examples-a-beginners-guide-02ff1e506781
+
+https://plotly.com/python/basic-charts/
+
+https://www.geeksforgeeks.org/data-visualization-with-python/
+
+https://plotly.com/examples/dashboards/

@@ -19,3 +19,20 @@ Reserved keywords - are special words that are part of the Python language synta
 Control flow - refers to the order in which individual statements, instructions, or function calls are executed or evaluated in a Python program
 Recursion - is a technique where a function calls itself to solve a problem
 TDD - Test-Driven Development (Red-Green-Refactor cycle)
+
+----------------------------------------------------------------------------------------------------
+### Module 3 Task 2 - Data structures and OOP
+
+The primary data structures in Python are:
+Fundamental types - Integers, Floats, Strings, Booleans
+Non-fundamental types - Lists, Tuples, Dictionaries, Sets
+
+The benefits of data serialisation include:
+• Data persistence: Serialisation allows you to save the state of an object to a file or database, enabling long-term storage
+• Data exchange: Serialisation enables data to be easily shared between different systems, platforms, or applications
+• Performance: Serialised data can be efficiently transmitted over networks, reducing bandwidth usage and improving communication speed
+
+The Singleton pattern is particularly useful for managing resources such as database connections, configuration settings, or logging instances in data engineering projects. 
+
+Procedurals (steps) vs OOP (groups/classes)
+EDA - Exploring Data Analysis

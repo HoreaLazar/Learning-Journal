@@ -32,7 +32,14 @@ The benefits of data serialisation include:
 • Data exchange: Serialisation enables data to be easily shared between different systems, platforms, or applications
 • Performance: Serialised data can be efficiently transmitted over networks, reducing bandwidth usage and improving communication speed
 
-The Singleton pattern is particularly useful for managing resources such as database connections, configuration settings, or logging instances in data engineering projects. 
+The Singleton pattern is a handy data pipeline, an architecture that creates the pathways that funnel the data from source to target systems, transforming it for business applications.  for managing resources such as database connections, configuration settings, or logging instances in data engineering projects. 
 
 Procedurals (steps) vs OOP (groups/classes)
 EDA - Exploring Data Analysis
+
+_______________________________________________________________________________
+
+### Module 3 Task 8 - Spark for data engineers
+
+A data pipeline is an architecture that creates the pathways that funnel the data from source to target systems, transforming it for use by business applications. 
+

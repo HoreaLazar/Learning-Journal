@@ -1,3 +1,19 @@
 Module 4 - Topic 2 - Cyber Security Essentials
 
 The CIA triad is a fundamental concept in cybersecurity that outlines three essential principles for protecting information: Confidentiality, Integrity and Availability.
+Symmetric and asymmetric encryption:
+- Symmetric encryption algorithms such as Data Encryption Standard (DES), 3DES, and
+Advanced Encryption Standard (AES) are based on the premise that each communicating party
+knows the pre-shared key.
+Symmetric algorithms use the same pre-shared key (secret key) to encrypt and decrypt data.
+Symmetric encryption algorithms are commonly used with VPN traffic because they use less
+CPU resources than asymmetric encryption algorithms.
+Most encryption keys are between 112 and 256 bits. Use a longer key for more secure
+communications
+
+- Data confidentiality can also be ensured using asymmetric algorithms, including Rivest, Shamir,
+and Adleman (RSA) and the public key infrastructure (PKI).
+Asymmetric algorithms, also called public-key algorithms, are designed so that the
+encryption and the decryption keys are different.
+Asymmetric algorithms use a public key and a private key. Both keys can be encrypted, but the complementary paired key is required for decryption. 
+Asymmetric encryption can use key lengths between 512 to 4,096 bits.

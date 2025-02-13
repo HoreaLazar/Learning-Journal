@@ -17,3 +17,9 @@ Asymmetric algorithms, also called public-key algorithms, are designed so that t
 encryption and the decryption keys are different.
 Asymmetric algorithms use a public key and a private key. Both keys can be encrypted, but the complementary paired key is required for decryption. 
 Asymmetric encryption can use key lengths between 512 to 4,096 bits.
+
+Public Key (Encrypt) + Private Key (Decrypt) = Confidentiality
+Private Key (Encrypt) + Public Key (Decrypt) = Authentication
+
+PKI - Public Key Infrastructure
+CA - The Certificate Authority

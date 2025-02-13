@@ -1,5 +1,6 @@
 Module 4 - Topic 2 - Cyber Security Essentials
 
+CIA Triad - Confidentiality, Integrity and Availability
 The CIA triad is a fundamental concept in cybersecurity that outlines three essential principles for protecting information: Confidentiality, Integrity and Availability.
 Symmetric and asymmetric encryption:
 - Symmetric encryption algorithms such as Data Encryption Standard (DES), 3DES, and
@@ -23,3 +24,10 @@ Private Key (Encrypt) + Public Key (Decrypt) = Authentication
 
 PKI - Public Key Infrastructure
 CA - The Certificate Authority
+RA - Registration Authority
+HMAC - Keyed-Hash Message Authentication
+MAC - Message Authentication Code
+NIST Cybersecurity - Identify, Protect, Detect, Respond, Recover
+ARO - Annual Rate of Occurrence
+SLE - Single Loss Expectancy
+ALE - Annual Loss Expectancy

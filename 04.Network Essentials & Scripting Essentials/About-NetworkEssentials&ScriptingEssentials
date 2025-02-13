@@ -31,3 +31,9 @@ NIST Cybersecurity - Identify, Protect, Detect, Respond, Recover
 ARO - Annual Rate of Occurrence
 SLE - Single Loss Expectancy
 ALE - Annual Loss Expectancy
+AAA model is complementary to the CIA triad: 
+- Authentication: Verifying the identity of users before granting access to systems.
+- Authorisation: Determining the level of access or permissions a user has once authenticated.
+- Accounting: Tracking and logging user activities within the system.
+MFA - multi-factor authentication
+Risk = Probability x Severity

@@ -27,6 +27,7 @@ CA - The Certificate Authority
 RA - Registration Authority
 HMAC - Keyed-Hash Message Authentication
 MAC - Message Authentication Code
+NIST - National Institute of Standards and Technology 
 NIST Cybersecurity - Identify, Protect, Detect, Respond, Recover
 ARO - Annual Rate of Occurrence
 SLE - Single Loss Expectancy

@@ -1,1 +1,98 @@
+Module 4 - Topic 2 - Cyber Security Essentials
 
+CIA Triad - Confidentiality, Integrity and Availability
+The CIA triad is a fundamental concept in cybersecurity that outlines three essential principles for protecting information: Confidentiality, Integrity and Availability.
+Symmetric and asymmetric encryption:
+- Symmetric encryption algorithms such as Data Encryption Standard (DES), 3DES, and
+Advanced Encryption Standard (AES) are based on the premise that each communicating party
+knows the pre-shared key.
+Symmetric algorithms use the same pre-shared key (secret key) to encrypt and decrypt data.
+Symmetric encryption algorithms are commonly used with VPN traffic because they use less
+CPU resources than asymmetric encryption algorithms.
+Most encryption keys are between 112 and 256 bits. Use a longer key for more secure
+communications
+
+- Data confidentiality can also be ensured using asymmetric algorithms, including Rivest, Shamir,
+and Adleman (RSA) and the public key infrastructure (PKI).
+Asymmetric algorithms, also called public-key algorithms, are designed so that the
+encryption and the decryption keys are different.
+Asymmetric algorithms use a public key and a private key. Both keys can be encrypted, but the complementary paired key is required for decryption. 
+Asymmetric encryption can use key lengths between 512 to 4,096 bits.
+
+Public Key (Encrypt) + Private Key (Decrypt) = Confidentiality
+Private Key (Encrypt) + Public Key (Decrypt) = Authentication
+
+PKI - Public Key Infrastructure
+CA - The Certificate Authority
+RA - Registration Authority
+HMAC - Keyed-Hash Message Authentication
+MAC - Message Authentication Code
+NIST - National Institute of Standards and Technology 
+NIST Cybersecurity - Identify, Protect, Detect, Respond, Recover
+ARO - Annual Rate of Occurrence
+SLE - Single Loss Expectancy
+ALE - Annual Loss Expectancy
+AAA model is complementary to the CIA triad: 
+- Authentication: Verifying the identity of users before granting access to systems.
+- Authorisation: Determining the level of access or permissions a user has once authenticated.
+- Accounting: Tracking and logging user activities within the system.
+MFA - multi-factor authentication
+Risk = Probability x Severity
+
+_______________________________________________________________
+Module 4 - Topic 3 - Designing secure architectures
+
+What are the three phases of cybersecurity architecture?
+- Develop
+- Implement
+- Monitor
+
+What are the five rules of networking?
+1. Redundancy
+2. Scalability
+3. Security
+4. Manageability
+5. Functionality
+
+Defence in Depth (DID) 
+- is a strategy that employs multiple layers of security measures and controls across the various parts of an organisation's information systems and networks to protect against threats and unauthorised access
+- this approach is predicated on the principle that if one layer of defence fails, additional layers will provide continued protection.
+
+Zero-Trust Architecture (ZTA)
+- is a cybersecurity approach that denies access to an enterprise's digital resources by default and grants authenticated users and devices tailored, siloed access to only the applications, data, services and systems they need to do their jobs
+- is centred on the belief that organisations should not automatically trust anything inside or outside their perimeters and instead must verify anything and everything trying to connect to its systems before granting access
+- the primary principle is: Implicit Trust Is Never Assumed, Always Verified
+
+“Implicit Trust Is Never Assumed, Always Verified” – what do we call that?
+- This foundational principle asserts that trust is never assumed regardless of the source or location, and verification is required from everyone trying to access resources in the network
+
+Micro-segmenting involves using software-defined networking (SDN) to create tiny, isolated segments within a network.
+
+Firewalls:
+- Proxy Firewalls (Application-Level Gateways)
+- Next-Generation Firewalls (NGFW)
+- Unified Threat Management (UTM)
+- Web Application Firewall (WAF)
+
+There are three common firewall designs, including
+- Public and Private: is used in SOHO and small branch office environments
+- DMZ Security Architecture: is a physical or logical subnet that separates an internal local area network (LAN) from untrusted external networks, usually the internet
+- DMZ (a demilitarized zone firewall): has typically one inside interface connected to the private network, one outside interface connected to the public network, and one DMZ interface
+
+XSS - cross-site scripting
+
+IDS: Intrusion Detection System - monitors network traffic for suspicious activity and signs of possible attacks. It's designed to detect and alert potential security breaches but does not take action to block them.
+IPS: Intrusion Prevention System - monitors network and/or system activities for malicious activities or policy violations. The key difference is that an IPS is placed in line and can automatically block or prevent such activities as they are detected, offering proactive protection.
+VPN: Virtual Private Network Appliance - provides secure remote access to a network or between networks over the Internet by encrypting connections. They are used to enable secure remote access for users or secure connections between sites, ensuring that data transmitted over public networks is protected.
+SWG: Secure Web Gateway - protect users from web-based threats and enforce company policies through web filtering, application control, and malware inspection. They are deployed to monitor and control user web traffic, preventing access to malicious websites or content that does not comply with policy.
+DLP: Data Loss Prevention - is focused on detecting and preventing the unauthorized use and transmission of confidential information. They monitor, detect, and block sensitive data while in use (endpoint actions), in motion (network traffic), and at rest (data storage).
+PVLANs: Private VLANs - segment the network at the data link layer (Layer 2). They allow for isolation between hosts within the same VLAN, preventing direct communication between devices in the same broadcast domain, which helps limit access to sensitive devices.
+Storm Control - prevents disruptions on a switch port caused by broadcast, multicast, or unicast storms. It automatically shuts down or limits the rate of these types of traffic when they exceed configured thresholds.
+
+HMS: Hardware Security Modules - a dedicated hardware device designed to generate, store, and manage cryptographic keys securely.
+KMS: Key Management Services - a cloud-based service providing secure key management capabilities. KMS solutions, such as AWS Key Management Service (AWS KMS) or Azure Key Vault, offer a scalable and convenient way to manage encryption keys without needing dedicated hardware.
+
+Patterns are reusable solutions to common problems faced during system design and development.
+• Efficiency: Reduce time to develop by leveraging proven strategies.
+• Reliability: Tested solutions lower the risk of new issues.
+• Consistency: Ensure uniformity in design and development.

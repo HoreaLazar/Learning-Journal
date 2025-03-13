@@ -6,3 +6,19 @@ Capital Expenditure (CAPEX) versus Operational Expenditure (OPEX)
 IaaS - Infrastructure as a Service
 PaaS - Platform as a Service
 SaaS - Software as a Service
+ROI - Return on Investment
+IAM - Identity and Access Management
+CSPs - cloud service providers 
+  - Amazon Web Services (AWS)
+  - Microsoft Azure
+  - Google Cloud Platform (GCP)
+
+## Module 5 - Topic 2 - Data in the Cloud
+
+RBAC - Role-Based Access Control
+AD - Active Directory
+MFA - Multi-Factor Authentication
+SS0 - Single sign-on
+SAS - Shared Access Signatures
+ABAC - Attribute-Based Access Control
+CQRS - Command Query Responsibility Segregation pattern

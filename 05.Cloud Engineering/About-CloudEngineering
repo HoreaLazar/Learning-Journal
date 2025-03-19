@@ -12,6 +12,7 @@ CSPs - cloud service providers
   - Amazon Web Services (AWS)
   - Microsoft Azure
   - Google Cloud Platform (GCP)
+_________________________________________________________
 
 ## Module 5 - Topic 2 - Data in the Cloud
 
@@ -22,3 +23,8 @@ SS0 - Single sign-on
 SAS - Shared Access Signatures
 ABAC - Attribute-Based Access Control
 CQRS - Command Query Responsibility Segregation pattern
+_________________________________________________________
+
+## Module 5 Topic 4 Securely deploying cloud data products 
+
+SRE - Site Reliability Engineering

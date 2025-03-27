@@ -96,3 +96,15 @@ Patterns are reusable solutions to common problems faced during system design an
 • Efficiency: Reduce time to develop by leveraging proven strategies.
 • Reliability: Tested solutions lower the risk of new issues.
 • Consistency: Ensure uniformity in design and development.
+
+_________________________________________________________________________________
+Module 4 Topic 4 - Security policy and incident response
+
+SIEM - The Security Information and Event Management system is a key tool in continuous monitoring. 
+SIEM systems aggregate and analyse log data from across an organisation's IT environment, providing a comprehensive view of security events
+
+MFA - Multi-Factor Authentication significantly reduces the risk of unauthorized access by adding an extra layer of security
+
+Root Cause Analysis (RCA) and Failure Mode and Effects Analysis (FMEA) - Determine the underlying causes of the incident, such as a misconfigured firewall or unpatched vulnerability
+
+MISP - The Malware Information Sharing Platform - is an open-source threat intelligence platform that facilitates the sharing of threat data and incident information

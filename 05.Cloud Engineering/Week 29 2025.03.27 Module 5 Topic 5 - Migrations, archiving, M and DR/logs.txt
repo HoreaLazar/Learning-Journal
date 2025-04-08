@@ -1,0 +1,4 @@
+log_id,timestamp,level,message
+LOG001,2024-03-01T09:00:00,INFO,User 101 logged in successfully.
+LOG002,2024-03-02T11:20:00,ERROR,Payment failed for TXN002 due to insufficient balance.
+LOG003,2024-03-03T15:00:00,WARNING,Unusual login attempt detected for user 103.

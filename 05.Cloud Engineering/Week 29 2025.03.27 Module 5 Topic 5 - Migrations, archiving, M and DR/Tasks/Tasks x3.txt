@@ -1,0 +1,5 @@
+Task 1: Document a migration plan including potential pitfalls and lessons learned.
+
+Task 2: Develop a basic disaster recovery plan and incident response procedure.
+
+Task 3: Understand your company’s monitoring setup, and investigate designing your own monitoring “dashboard”. 

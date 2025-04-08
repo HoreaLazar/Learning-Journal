@@ -1,0 +1,19 @@
+Thank you for your submission. So you're aware of how feedback will look, it will be broken into three sections:
+
+Strengths - What you did well
+Areas of Improvement - Where you can look for tweaks for this report
+Future Development - Key areas to look at before your next assessment
+Strengths
+
+Really interesting idea that you have conveyed.
+Clear objective and direction to the report.
+Great use of evidence to highlight key details in the project.
+Areas of Improvement
+
+It would be good to know the stakeholders involved in the project - how did this project come about? What were the objectives/tasks ("validate data" is quite generic - what did they actually want)?
+What are the next steps when it comes to CI/CD? e.g. how will you future proof this project against data changes?
+"In this project, it was found that the UK server files have fewer rows than the client (Senpiper) files, indicating potential data loss or incomplete data transfer." - this seems quite big! I would definitely look into this more.
+Future Development
+
+Try to avoid lots of bullet points to help the flow of the report.
+Reporting metrics, like ROI, FTE saved % quality improvement, can help leaders understand project impact

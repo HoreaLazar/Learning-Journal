@@ -1,0 +1,42 @@
+from kafka import KafkaProducer
+from dotenv import load_dotenv
+import os
+import json
+import time
+from numpy import random
+
+load_dotenv()
+
+print("Loading environment variables from .env file")
+
+producer = KafkaProducer(
+    bootstrap_servers=os.getenv("BOOTSTRAP_SERVERS"),
+    sasl_plain_username=os.getenv("SASL_USERNAME"),
+    sasl_plain_password=os.getenv("SASL_PASSWORD"),
+    security_protocol='SASL_SSL',
+    sasl_mechanism='SCRAM-SHA-256',
+    value_serializer=lambda v: v.encode("utf-8"),
+    key_serializer=lambda k: k.encode("utf-8"),
+)
+
+print("Kafka producer created")
+for i in range(10):
+    j = i + 1
+    message = {
+        "order_id": f"Sam {j}",
+        "customer_name": f"Customer {j}",
+        "product": f"Product {j}",
+        "quantity": 1,
+        "price": round(10*random.rand(), 2),
+        "order_date": "2023-10-01",
+        "order_time": "12:00:00"
+    }
+    producer.send('topic-demo',
+                  key=message['order_id'],
+                  value=json.dumps(message))
+    print(f"Sent: {message}")
+    time.sleep(1)
+
+producer.flush()
+producer.close()
+print("Messages sent")

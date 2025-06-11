@@ -1,0 +1,4 @@
+user_id,name,email,signup_date
+101,John Doe,john.doe@example.com,2023-06-01
+102,Jane Smith,jane.smith@example.com,2023-07-15
+103,Robert Brown,robert.brown@example.com,2023-08-20

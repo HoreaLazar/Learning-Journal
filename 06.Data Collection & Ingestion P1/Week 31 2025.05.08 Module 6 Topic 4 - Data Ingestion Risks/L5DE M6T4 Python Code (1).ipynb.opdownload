@@ -1,0 +1,161 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 775
+        },
+        "id": "HI3Yw3Ylodxk",
+        "outputId": "889c9f9f-3c16-4381-f268-93786f1d4854"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "WARNING:urllib3.connectionpool:Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7d58d4197700>: Failed to resolve 'api.example.com' ([Errno -2] Name or service not known)\")': /data\n",
+            "WARNING:urllib3.connectionpool:Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7d58d4197940>: Failed to resolve 'api.example.com' ([Errno -2] Name or service not known)\")': /data\n",
+            "WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7d58d54d4580>: Failed to resolve 'api.example.com' ([Errno -2] Name or service not known)\")': /data\n",
+            "WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7d58d4196fb0>: Failed to resolve 'api.example.com' ([Errno -2] Name or service not known)\")': /data\n",
+            "WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7d58d4195360>: Failed to resolve 'api.example.com' ([Errno -2] Name or service not known)\")': /data\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "ConnectionError",
+          "evalue": "HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /data (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7d58d4195060>: Failed to resolve 'api.example.com' ([Errno -2] Name or service not known)\"))",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mgaierror\u001b[0m                                  Traceback (most recent call last)",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connection.py\u001b[0m in \u001b[0;36m_new_conn\u001b[0;34m(self)\u001b[0m\n\u001b[1;32m    202\u001b[0m         \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 203\u001b[0;31m             sock = connection.create_connection(\n\u001b[0m\u001b[1;32m    204\u001b[0m                 \u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_dns_host\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mport\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py\u001b[0m in \u001b[0;36mcreate_connection\u001b[0;34m(address, timeout, source_address, socket_options)\u001b[0m\n\u001b[1;32m     59\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 60\u001b[0;31m     \u001b[0;32mfor\u001b[0m \u001b[0mres\u001b[0m \u001b[0;32min\u001b[0m \u001b[0msocket\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgetaddrinfo\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mhost\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mport\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mfamily\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0msocket\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mSOCK_STREAM\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     61\u001b[0m         \u001b[0maf\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0msocktype\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mproto\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mcanonname\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0msa\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mres\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/lib/python3.10/socket.py\u001b[0m in \u001b[0;36mgetaddrinfo\u001b[0;34m(host, port, family, type, proto, flags)\u001b[0m\n\u001b[1;32m    954\u001b[0m     \u001b[0maddrlist\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m[\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 955\u001b[0;31m     \u001b[0;32mfor\u001b[0m \u001b[0mres\u001b[0m \u001b[0;32min\u001b[0m \u001b[0m_socket\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgetaddrinfo\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mhost\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mport\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mfamily\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mtype\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mproto\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mflags\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    956\u001b[0m         \u001b[0maf\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0msocktype\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mproto\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mcanonname\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0msa\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mres\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mgaierror\u001b[0m: [Errno -2] Name or service not known",
+            "\nThe above exception was the direct cause of the following exception:\n",
+            "\u001b[0;31mNameResolutionError\u001b[0m                       Traceback (most recent call last)",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py\u001b[0m in \u001b[0;36murlopen\u001b[0;34m(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)\u001b[0m\n\u001b[1;32m    790\u001b[0m             \u001b[0;31m# Make the request on the HTTPConnection object\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 791\u001b[0;31m             response = self._make_request(\n\u001b[0m\u001b[1;32m    792\u001b[0m                 \u001b[0mconn\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py\u001b[0m in \u001b[0;36m_make_request\u001b[0;34m(self, conn, method, url, body, headers, retries, timeout, chunked, response_conn, preload_content, decode_content, enforce_content_length)\u001b[0m\n\u001b[1;32m    491\u001b[0m                 \u001b[0mnew_e\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0m_wrap_proxy_error\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mnew_e\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mconn\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mproxy\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mscheme\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 492\u001b[0;31m             \u001b[0;32mraise\u001b[0m \u001b[0mnew_e\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    493\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py\u001b[0m in \u001b[0;36m_make_request\u001b[0;34m(self, conn, method, url, body, headers, retries, timeout, chunked, response_conn, preload_content, decode_content, enforce_content_length)\u001b[0m\n\u001b[1;32m    467\u001b[0m             \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 468\u001b[0;31m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_validate_conn\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mconn\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    469\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mSocketTimeout\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mBaseSSLError\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py\u001b[0m in \u001b[0;36m_validate_conn\u001b[0;34m(self, conn)\u001b[0m\n\u001b[1;32m   1096\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mconn\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mis_closed\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1097\u001b[0;31m             \u001b[0mconn\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mconnect\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1098\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connection.py\u001b[0m in \u001b[0;36mconnect\u001b[0;34m(self)\u001b[0m\n\u001b[1;32m    610\u001b[0m         \u001b[0msock\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0msocket\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msocket\u001b[0m \u001b[0;34m|\u001b[0m \u001b[0mssl\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mSSLSocket\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 611\u001b[0;31m         \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msock\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0msock\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_new_conn\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    612\u001b[0m         \u001b[0mserver_hostname\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mstr\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mhost\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connection.py\u001b[0m in \u001b[0;36m_new_conn\u001b[0;34m(self)\u001b[0m\n\u001b[1;32m    209\u001b[0m         \u001b[0;32mexcept\u001b[0m \u001b[0msocket\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgaierror\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 210\u001b[0;31m             \u001b[0;32mraise\u001b[0m \u001b[0mNameResolutionError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mhost\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    211\u001b[0m         \u001b[0;32mexcept\u001b[0m \u001b[0mSocketTimeout\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameResolutionError\u001b[0m: <urllib3.connection.HTTPSConnection object at 0x7d58d4195060>: Failed to resolve 'api.example.com' ([Errno -2] Name or service not known)",
+            "\nThe above exception was the direct cause of the following exception:\n",
+            "\u001b[0;31mMaxRetryError\u001b[0m                             Traceback (most recent call last)",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/requests/adapters.py\u001b[0m in \u001b[0;36msend\u001b[0;34m(self, request, stream, timeout, verify, cert, proxies)\u001b[0m\n\u001b[1;32m    666\u001b[0m         \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 667\u001b[0;31m             resp = conn.urlopen(\n\u001b[0m\u001b[1;32m    668\u001b[0m                 \u001b[0mmethod\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mrequest\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmethod\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py\u001b[0m in \u001b[0;36murlopen\u001b[0;34m(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)\u001b[0m\n\u001b[1;32m    874\u001b[0m             )\n\u001b[0;32m--> 875\u001b[0;31m             return self.urlopen(\n\u001b[0m\u001b[1;32m    876\u001b[0m                 \u001b[0mmethod\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py\u001b[0m in \u001b[0;36murlopen\u001b[0;34m(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)\u001b[0m\n\u001b[1;32m    874\u001b[0m             )\n\u001b[0;32m--> 875\u001b[0;31m             return self.urlopen(\n\u001b[0m\u001b[1;32m    876\u001b[0m                 \u001b[0mmethod\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py\u001b[0m in \u001b[0;36murlopen\u001b[0;34m(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)\u001b[0m\n\u001b[1;32m    874\u001b[0m             )\n\u001b[0;32m--> 875\u001b[0;31m             return self.urlopen(\n\u001b[0m\u001b[1;32m    876\u001b[0m                 \u001b[0mmethod\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py\u001b[0m in \u001b[0;36murlopen\u001b[0;34m(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)\u001b[0m\n\u001b[1;32m    874\u001b[0m             )\n\u001b[0;32m--> 875\u001b[0;31m             return self.urlopen(\n\u001b[0m\u001b[1;32m    876\u001b[0m                 \u001b[0mmethod\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py\u001b[0m in \u001b[0;36murlopen\u001b[0;34m(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)\u001b[0m\n\u001b[1;32m    874\u001b[0m             )\n\u001b[0;32m--> 875\u001b[0;31m             return self.urlopen(\n\u001b[0m\u001b[1;32m    876\u001b[0m                 \u001b[0mmethod\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py\u001b[0m in \u001b[0;36murlopen\u001b[0;34m(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)\u001b[0m\n\u001b[1;32m    844\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 845\u001b[0;31m             retries = retries.increment(\n\u001b[0m\u001b[1;32m    846\u001b[0m                 \u001b[0mmethod\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0murl\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0merror\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mnew_e\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0m_pool\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0m_stacktrace\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0msys\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mexc_info\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/urllib3/util/retry.py\u001b[0m in \u001b[0;36mincrement\u001b[0;34m(self, method, url, response, error, _pool, _stacktrace)\u001b[0m\n\u001b[1;32m    514\u001b[0m             \u001b[0mreason\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0merror\u001b[0m \u001b[0;32mor\u001b[0m \u001b[0mResponseError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcause\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 515\u001b[0;31m             \u001b[0;32mraise\u001b[0m \u001b[0mMaxRetryError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0m_pool\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0murl\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mreason\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mreason\u001b[0m  \u001b[0;31m# type: ignore[arg-type]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    516\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mMaxRetryError\u001b[0m: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /data (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7d58d4195060>: Failed to resolve 'api.example.com' ([Errno -2] Name or service not known)\"))",
+            "\nDuring handling of the above exception, another exception occurred:\n",
+            "\u001b[0;31mConnectionError\u001b[0m                           Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-2-e2afb2cbf633>\u001b[0m in \u001b[0;36m<cell line: 62>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     61\u001b[0m \u001b[0msession\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0msetup_session\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     62\u001b[0m \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 63\u001b[0;31m     \u001b[0mresponse\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0msession\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpost\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mapi_url\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdata\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mcompressed_payload\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mheaders\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mheaders\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     64\u001b[0m     \u001b[0;31m# Check if response is received and process it\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     65\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mresponse\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstatus_code\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;36m200\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/requests/sessions.py\u001b[0m in \u001b[0;36mpost\u001b[0;34m(self, url, data, json, **kwargs)\u001b[0m\n\u001b[1;32m    635\u001b[0m         \"\"\"\n\u001b[1;32m    636\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 637\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrequest\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"POST\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0murl\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdata\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mdata\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mjson\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mjson\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    638\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    639\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0murl\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mdata\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mNone\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/requests/sessions.py\u001b[0m in \u001b[0;36mrequest\u001b[0;34m(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)\u001b[0m\n\u001b[1;32m    587\u001b[0m         }\n\u001b[1;32m    588\u001b[0m         \u001b[0msend_kwargs\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mupdate\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msettings\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 589\u001b[0;31m         \u001b[0mresp\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprep\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0msend_kwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    590\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    591\u001b[0m         \u001b[0;32mreturn\u001b[0m \u001b[0mresp\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/requests/sessions.py\u001b[0m in \u001b[0;36msend\u001b[0;34m(self, request, **kwargs)\u001b[0m\n\u001b[1;32m    701\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    702\u001b[0m         \u001b[0;31m# Send the request\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 703\u001b[0;31m         \u001b[0mr\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0madapter\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mrequest\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    704\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    705\u001b[0m         \u001b[0;31m# Total elapsed time of the request (approximately)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/requests/adapters.py\u001b[0m in \u001b[0;36msend\u001b[0;34m(self, request, stream, timeout, verify, cert, proxies)\u001b[0m\n\u001b[1;32m    698\u001b[0m                 \u001b[0;32mraise\u001b[0m \u001b[0mSSLError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0me\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mrequest\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mrequest\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    699\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 700\u001b[0;31m             \u001b[0;32mraise\u001b[0m \u001b[0mConnectionError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0me\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mrequest\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mrequest\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    701\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    702\u001b[0m         \u001b[0;32mexcept\u001b[0m \u001b[0mClosedPoolError\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mConnectionError\u001b[0m: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /data (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7d58d4195060>: Failed to resolve 'api.example.com' ([Errno -2] Name or service not known)\"))"
+          ]
+        }
+      ],
+      "source": [
+        "import requests\n",
+        "import json\n",
+        "import zlib\n",
+        "import base64\n",
+        "from requests.adapters import HTTPAdapter\n",
+        "from requests.packages.urllib3.util.retry import Retry\n",
+        "from urllib3.exceptions import MaxRetryError\n",
+        "\n",
+        "# Compress data before sending it over the network\n",
+        "def compress_data(data):\n",
+        "    \"\"\"\n",
+        "    Compresses JSON data using zlib and encodes it in base64 for safe network transmission.\n",
+        "    Args:\n",
+        "    data (dict): Data to be compressed and sent.\n",
+        "    Returns:\n",
+        "    str: Compressed data encoded in base64.\n",
+        "    \"\"\"\n",
+        "    json_data = json.dumps(data).encode('utf-8')\n",
+        "    compressed_data = zlib.compress(json_data)\n",
+        "    return base64.b64encode(compressed_data).decode('utf-8')\n",
+        "\n",
+        "# Decompress data received over the network\n",
+        "def decompress_data(compressed_data):\n",
+        "    \"\"\"\n",
+        "    Decompresses data received in base64 encoded zlib format back to JSON.\n",
+        "    Args:\n",
+        "    compressed_data (bytes): Compressed data encoded in base64 to be decompressed.\n",
+        "    Returns:\n",
+        "    dict: Decompressed data as a Python dictionary.\n",
+        "    \"\"\"\n",
+        "    data_bytes = base64.b64decode(compressed_data)\n",
+        "    decompressed_data = zlib.decompress(data_bytes)\n",
+        "    return json.loads(decompressed_data.decode('utf-8'))\n",
+        "\n",
+        "# Setup a session with retry logic\n",
+        "def setup_session():\n",
+        "    \"\"\"\n",
+        "    Sets up a requests session with retry logic to handle transient errors in network communication.\n",
+        "    Returns:\n",
+        "    requests.Session: A configured session with retry logic.\n",
+        "    \"\"\"\n",
+        "    session = requests.Session()\n",
+        "    retries = Retry(total=5, backoff_factor=1, status_forcelist=[502, 503, 504], raise_on_status=False)\n",
+        "    session.mount('https://', HTTPAdapter(max_retries=retries))\n",
+        "    return session\n",
+        "\n",
+        "# Example data representing an API payload\n",
+        "example_data = {\n",
+        "    'name': 'Jane Smith',\n",
+        "    'email': 'jane.smith@example.com',\n",
+        "    'phone': '07123 456789'\n",
+        "}\n",
+        "\n",
+        "compressed_payload = compress_data(example_data)\n",
+        "\n",
+        "# Simulate sending compressed data to an API\n",
+        "api_url = 'https://api.example.com/data'\n",
+        "headers = {'Content-Type': 'application/json', 'Content-Encoding': 'gzip'}\n",
+        "\n",
+        "# Use the session with retry logic\n",
+        "session = setup_session()\n",
+        "try:\n",
+        "    response = session.post(api_url, data=compressed_payload, headers=headers)\n",
+        "    # Check if response is received and process it\n",
+        "    if response.status_code == 200:\n",
+        "        received_compressed_data = response.content\n",
+        "        decompressed_data = decompress_data(received_compressed_data)\n",
+        "        print(\"Decompressed Data:\", decompressed_data)\n",
+        "    else:\n",
+        "        print(f\"Failed to fetch data: HTTP {response.status_code}\")\n",
+        "except MaxRetryError as e:\n",
+        "    print(f\"Max retries exceeded: {e.reason}\")\n",
+        "\n",
+        "# Cleanup session\n",
+        "session.close()"
+      ]
+    }
+  ]
+}

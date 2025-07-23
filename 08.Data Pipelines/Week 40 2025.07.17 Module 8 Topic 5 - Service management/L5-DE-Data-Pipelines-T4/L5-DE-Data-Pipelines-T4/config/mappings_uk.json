@@ -1,0 +1,21 @@
+{
+    "label": "UK",
+    "timezone": "Europe/London",
+    "user_path": "data/UK User Data.csv",
+    "login_path": "data/UK-User-LoginTS.csv",
+    "encoding": "latin1",
+    "payment_period": 1,
+    "int_dial_code": "44",
+    "currency": "GBP",
+
+    "education_mapping": {
+        "1": "Vocational Qualification Level 1",
+        "2": "Vocational Qualification Level 2",
+        "3": "A Level",
+        "4": "Higher National Certificate",
+        "5": "Higher National Diploma",
+        "6": "Bachelor’s Degree",
+        "7": "Master’s Degree",
+        "8": "Doctorate Degree"
+    }
+}

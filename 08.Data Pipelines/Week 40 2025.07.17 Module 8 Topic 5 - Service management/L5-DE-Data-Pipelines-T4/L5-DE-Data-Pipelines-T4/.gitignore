@@ -1,0 +1,5 @@
+*.db
+*.log
+explorer.ipynb
+__pycache__
+.pytest_cache

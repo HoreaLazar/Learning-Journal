@@ -1,0 +1,38 @@
+{
+    "label": "SC",
+    "timezone": "Europe/London",
+    "user_path": "data/SC User Data.csv",
+    "login_path": "data/SC-User-LoginTS.csv",
+    "encoding": "utf-8",
+    "payment_period": 1,
+    "int_dial_code": "44",
+    "currency": "GBP",
+
+    "column_mapping": {
+        "town": "city",
+        "district": "county",
+        "scqf": "rqf"
+    },
+
+    "gender_mapping": {
+        "M": "Male",
+        "F": "Female",
+        "NB": "Non-Binary",
+        "LBTQI": "LGBTQ+"
+    },
+
+    "education_mapping": {
+        "12": "Doctoral degree",
+        "11": "Master's degree",
+        "10": "Bachelor's degree with honours",
+        "9": "Non-honours bachelor's degree",
+        "8": "Higher National Diploma",
+        "7": "Higher National Certificate",
+        "6": "A-level, AS Level, National Diploma",
+        "5": "GCSE (grades A*–C and 4–9)",
+        "4": "GCSE (grades D–F and 1–3)",
+        "3": "Skills for Life",
+        "2": "Skills for Life",
+        "1": "Skills for Life"
+    }
+}
